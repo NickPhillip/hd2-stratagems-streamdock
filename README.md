@@ -26,6 +26,9 @@ developer, suggestions and pull requests are very welcome.
   - waits for you to **throw** the stratagem (left mouse button release);
   - counts down the **call-in time** (`↓7s`);
   - then shows the **cooldown** with a clockwise sweep until it's ready again.
+
+  ![Key states: ready, waiting for the throw, call-in countdown, cooldown sweep, ready again](docs/cooldown-states.png)
+
 - **Ship modules**: tick the upgrades you have unlocked (Zero-G Breech Loading,
   Liquid-Ventilated Cockpit, Morale Augmentation, etc.) and the times match your ship.
 - Pressing the menu key before throwing **cancels** the wait.
@@ -37,6 +40,9 @@ developer, suggestions and pull requests are very welcome.
 2. Run it. It finds the deck app, closes it if needed, installs the plugin and reopens the app.
    Run it again later to **update** or **uninstall**.
 3. In the deck app, find the **Helldivers 2** category and drag stratagems onto your keys.
+
+   ![Drag a stratagem from the action list onto a key](docs/drag-and-drop.png)
+
 4. Click any Helldivers key to open its settings:
    - set **Menu mode** to match your game (*Press to open* or *Hold*);
    - tick your **unlocked ship modules**.
@@ -52,6 +58,11 @@ the `INSTALL.txt` inside it.
 deck app, version 3.10 or newer.
 
 ## Settings
+
+Click any Helldivers key in the deck app to open its settings. Except for the info at the top,
+they apply to every key.
+
+<img src="docs/settings.png" alt="Settings panel of a stratagem key" width="420">
 
 | Setting | What it does |
 |---|---|
