@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Helldivers 2 Stratagems</title>
+<style>
+  body { margin: 0; padding: 10px 12px; background: #2d2d2d; color: #d8d8d8;
+         font: 12px "Segoe UI", sans-serif; }
+  .row { display: flex; align-items: center; margin: 6px 0; gap: 8px; }
+  .row label { width: 130px; flex: none; color: #9a9a9a; }
+  select, input { flex: 1; background: #3d3d3d; color: #e8e8e8; border: 1px solid #555;
+                  border-radius: 3px; padding: 3px 5px; font: inherit; min-width: 0; }
+  .code { font-size: 18px; letter-spacing: 3px; color: #f5d300; }
+  button { background: #3d3d3d; color: #e8e8e8; border: 1px solid #666; border-radius: 3px;
+           padding: 4px 10px; font: inherit; cursor: pointer; }
+  button:hover { background: #4a4a4a; }
+  .hint { color: #8a8a8a; font-size: 11px; margin: 2px 0 8px 138px; }
+  hr { border: 0; border-top: 1px solid #444; margin: 10px 0; }
+  .section { color: #9a9a9a; margin: 10px 0 4px; }
+  .checks label { display: flex; align-items: baseline; gap: 6px; margin: 3px 0 3px 8px; cursor: pointer; }
+  .checks input { flex: none; margin: 0; }
+  .checks em { color: #8a8a8a; font-style: normal; font-size: 11px; }
+</style>
+</head>
+<body>
+  <div class="row"><label>Code</label><span class="code" id="code">…</span></div>
+  <div class="row"><label>Call-in time</label><span id="callin">…</span></div>
+  <div class="row"><label>Cooldown</label><span id="cooldown">…</span></div>
+  <hr>
+  <div class="row"><label>Direction keys</label>
+    <select id="keys"><option value="arrows">Arrows (← ↑ → ↓)</option><option value="wasd">W A S D</option></select>
+  </div>
+  <div class="row"><label>Menu key</label>
+    <select id="menuKey">
+      <option value="ctrl">Ctrl (game default)</option><option value="alt">Alt</option>
+      <option value="shift">Shift</option><option value="none">None</option>
+    </select>
+  </div>
+  <div class="row"><label>Menu mode</label>
+    <select id="menuMode">
+      <option value="toggle">Press to open (toggle)</option>
+      <option value="hold">Hold</option>
+    </select>
+  </div>
+  <div class="hint">Use the same mode set in the game.</div>
+  <div class="row"><label>Menu delay (ms)</label><input id="menuDelay" type="number" min="0" max="2000"></div>
+  <div class="row"><label>Key hold (ms)</label><input id="keyHold" type="number" min="0" max="1000"></div>
+  <div class="row"><label>Key gap (ms)</label><input id="keyGap" type="number" min="0" max="1000"></div>
+  <div class="hint">Apply to every button. If the game misses arrows, increase these times.</div>
+  <hr>
+  <div class="row"><label>Start cooldown</label>
+    <select id="throwDetect">
+      <option value="on">On throw (left mouse button)</option>
+      <option value="off">On button press</option>
+    </select>
+  </div>
+  <div class="row"><label>Cooldown animation</label>
+    <select id="sweepFps">
+      <option value="4">Smooth (4 updates/s)</option>
+      <option value="2">Medium (2/s)</option>
+      <option value="1">Light (1/s)</option>
+      <option value="0">Off (dim only)</option>
+    </select>
+  </div>
+  <div class="section">Unlocked ship modules</div>
+  <div class="checks" id="upgrades">
+    <label><input type="checkbox" value="streamlined-request"> Streamlined Request Process <em>support weapons −10%</em></label>
+    <label><input type="checkbox" value="hand-carts"> Hand Carts <em>backpacks −10%</em></label>
+    <label><input type="checkbox" value="zero-g-breech"> Zero-G Breech Loading <em>orbitals −10%</em></label>
+    <label><input type="checkbox" value="liquid-ventilated-cockpit"> Liquid-Ventilated Cockpit <em>Eagles −50%</em></label>
+    <label><input type="checkbox" value="morale-augmentation"> Morale Augmentation <em>all −5%</em></label>
+    <label><input type="checkbox" value="synthetic-supplementation"> Synthetic Supplementation <em>sentries, emplacements and Resupply −10%</em></label>
+    <label><input type="checkbox" value="targeting-software"> Targeting Software Upgrade <em>orbital call-in −1 s</em></label>
+    <label><input type="checkbox" value="streamlined-launch"> Streamlined Launch Process <em>support weapon call-in</em></label>
+    <label><input type="checkbox" value="dynamic-tracking"> Dynamic Tracking <em>sentry call-in</em></label>
+    <label><input type="checkbox" value="rapid-launch"> Rapid Launch System <em>emplacement call-in</em></label>
+  </div>
+  <div class="hint">Apply to every button. The cooldown starts when the stratagem arrives.</div>
+  <div class="row"><label>Throw timeout (s)</label><input id="throwTimeout" type="number" min="1" max="120"></div>
+  <div class="row"><label>Game process</label><input id="gameProcess" type="text"></div>
+  <div class="hint">The throw (releasing the left mouse button) only counts with this program in the foreground. Pressing the menu key before throwing cancels the wait.</div>
+  <hr>
+  <div class="row"><label></label><button id="test">Test in 3 s</button></div>
+  <div class="hint">Click and switch to the game: the code is sent after 3 seconds.</div>
+
+<script>
+const ARROW = { U: '↑', D: '↓', L: '←', R: '→' };
+const FIELDS = ['keys', 'menuKey', 'menuMode', 'menuDelay', 'keyHold', 'keyGap', 'throwDetect', 'sweepFps', 'throwTimeout', 'gameProcess'];
+let ws, ctx, action;
+
+function toPlugin(payload) {
+  ws.send(JSON.stringify({ event: 'sendToPlugin', action, context: ctx, payload }));
+}
+
+const upgradeBoxes = [...document.querySelectorAll('#upgrades input')];
+
+function fill(settings) {
+  for (const f of FIELDS) if (settings[f] !== undefined) document.getElementById(f).value = settings[f];
+  const chosen = settings.upgrades || [];
+  for (const b of upgradeBoxes) b.checked = chosen.includes(b.value);
+}
+
+function save() {
+  const s = {};
+  for (const f of FIELDS) s[f] = document.getElementById(f).value;
+  s.upgrades = upgradeBoxes.filter((b) => b.checked).map((b) => b.value);
+  toPlugin({ settings: s });
+}
+
+function fmt(sec) {
+  return sec >= 60 ? `${Math.floor(sec / 60)}:${String(sec % 60).padStart(2, '0')}` : `${sec}s`;
+}
+
+// Chamado pelo app ao abrir o painel.
+function connectElgatoStreamDeckSocket(port, uuid, registerEvent, info, actionInfo) {
+  const ai = JSON.parse(actionInfo);
+  ctx = uuid;
+  action = ai.action;
+  ws = new WebSocket('ws://127.0.0.1:' + port);
+  ws.onopen = () => {
+    ws.send(JSON.stringify({ event: registerEvent, uuid }));
+    toPlugin({ request: 'getSettings' });
+  };
+  ws.onmessage = (e) => {
+    const msg = JSON.parse(e.data);
+    if (msg.event !== 'sendToPropertyInspector' || !msg.payload) return;
+    if (msg.payload.settings) fill(msg.payload.settings);
+    if (msg.payload.code) document.getElementById('code').textContent = [...msg.payload.code].map((c) => ARROW[c]).join(' ');
+    if (msg.payload.cooldownBase !== undefined) {
+      const { cooldownBase: base, cooldown: cd } = msg.payload;
+      document.getElementById('cooldown').textContent = !base ? 'no cooldown'
+        : cd === base ? fmt(base) : `${fmt(cd)} (base ${fmt(base)})`;
+      document.getElementById('callin').textContent = base ? `${msg.payload.callTime} s` : '—';
+    }
+  };
+}
+
+for (const f of FIELDS) document.getElementById(f).addEventListener('change', save);
+for (const b of upgradeBoxes) b.addEventListener('change', save);
+document.getElementById('test').addEventListener('click', () => toPlugin({ request: 'test' }));
+</script>
+</body>
+</html>

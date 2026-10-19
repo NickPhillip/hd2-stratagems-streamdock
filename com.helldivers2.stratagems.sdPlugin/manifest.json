@@ -1,0 +1,2211 @@
+{
+  "SDKVersion": 1,
+  "Author": "Helldiver",
+  "Name": "Helldivers 2 Stratagems",
+  "Description": "Calls Helldivers 2 stratagems (opens the stratagem menu and enters the arrow code), with cooldown timers.",
+  "Category": "Helldivers 2",
+  "CategoryIcon": "images/plugin",
+  "Icon": "images/plugin",
+  "Version": "1.0.0",
+  "URL": "https://helldivers.wiki.gg/wiki/Stratagems",
+  "CodePathWin": "plugin/index.js",
+  "OS": [
+    {
+      "Platform": "windows",
+      "MinimumVersion": "10"
+    }
+  ],
+  "Software": {
+    "MinimumVersion": "3.10.188.226"
+  },
+  "Nodejs": {
+    "Version": "20"
+  },
+  "Actions": [
+    {
+      "Name": "Orbital Precision Strike",
+      "UUID": "com.helldivers2.stratagems.orbital-precision-strike",
+      "Icon": "images/orbital-precision-strike",
+      "Tooltip": "Orbital Strikes: → → ↑",
+      "States": [
+        {
+          "Image": "images/orbital-precision-strike",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "Orbital Gatling Barrage",
+      "UUID": "com.helldivers2.stratagems.orbital-gatling-barrage",
+      "Icon": "images/orbital-gatling-barrage",
+      "Tooltip": "Orbital Strikes: → ↓ ← ↑ ↑",
+      "States": [
+        {
+          "Image": "images/orbital-gatling-barrage",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "Orbital Gas Strike",
+      "UUID": "com.helldivers2.stratagems.orbital-gas-strike",
+      "Icon": "images/orbital-gas-strike",
+      "Tooltip": "Orbital Strikes: → → ↓ →",
+      "States": [
+        {
+          "Image": "images/orbital-gas-strike",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "Orbital 120mm HE Barrage",
+      "UUID": "com.helldivers2.stratagems.orbital-120mm-he-barrage",
+      "Icon": "images/orbital-120mm-he-barrage",
+      "Tooltip": "Orbital Strikes: → → ↓ ← → ↓",
+      "States": [
+        {
+          "Image": "images/orbital-120mm-he-barrage",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "Orbital Airburst Strike",
+      "UUID": "com.helldivers2.stratagems.orbital-airburst-strike",
+      "Icon": "images/orbital-airburst-strike",
+      "Tooltip": "Orbital Strikes: → → →",
+      "States": [
+        {
+          "Image": "images/orbital-airburst-strike",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "Orbital Smoke Strike",
+      "UUID": "com.helldivers2.stratagems.orbital-smoke-strike",
+      "Icon": "images/orbital-smoke-strike",
+      "Tooltip": "Orbital Strikes: → → ↓ ↑",
+      "States": [
+        {
+          "Image": "images/orbital-smoke-strike",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "Orbital EMS Strike",
+      "UUID": "com.helldivers2.stratagems.orbital-ems-strike",
+      "Icon": "images/orbital-ems-strike",
+      "Tooltip": "Orbital Strikes: → → ← ↓",
+      "States": [
+        {
+          "Image": "images/orbital-ems-strike",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "Orbital 380mm HE Barrage",
+      "UUID": "com.helldivers2.stratagems.orbital-380mm-he-barrage",
+      "Icon": "images/orbital-380mm-he-barrage",
+      "Tooltip": "Orbital Strikes: → ↓ ↑ ↑ ← ↓ ↓",
+      "States": [
+        {
+          "Image": "images/orbital-380mm-he-barrage",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "Orbital Walking Barrage",
+      "UUID": "com.helldivers2.stratagems.orbital-walking-barrage",
+      "Icon": "images/orbital-walking-barrage",
+      "Tooltip": "Orbital Strikes: → ↓ → ↓ → ↓",
+      "States": [
+        {
+          "Image": "images/orbital-walking-barrage",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "Orbital Laser",
+      "UUID": "com.helldivers2.stratagems.orbital-laser",
+      "Icon": "images/orbital-laser",
+      "Tooltip": "Orbital Strikes: → ↓ ↑ → ↓",
+      "States": [
+        {
+          "Image": "images/orbital-laser",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "Orbital Napalm Barrage",
+      "UUID": "com.helldivers2.stratagems.orbital-napalm-barrage",
+      "Icon": "images/orbital-napalm-barrage",
+      "Tooltip": "Orbital Strikes: → → ↓ ← → ↑",
+      "States": [
+        {
+          "Image": "images/orbital-napalm-barrage",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "Orbital Railcannon Strike",
+      "UUID": "com.helldivers2.stratagems.orbital-railcannon-strike",
+      "Icon": "images/orbital-railcannon-strike",
+      "Tooltip": "Orbital Strikes: → ↑ ↓ ↓ →",
+      "States": [
+        {
+          "Image": "images/orbital-railcannon-strike",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "Eagle Gas Airstrike",
+      "UUID": "com.helldivers2.stratagems.eagle-gas-airstrike",
+      "Icon": "images/eagle-gas-airstrike",
+      "Tooltip": "Eagle Strikes: ↑ → ← →",
+      "States": [
+        {
+          "Image": "images/eagle-gas-airstrike",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "Eagle Strafing Run",
+      "UUID": "com.helldivers2.stratagems.eagle-strafing-run",
+      "Icon": "images/eagle-strafing-run",
+      "Tooltip": "Eagle Strikes: ↑ → →",
+      "States": [
+        {
+          "Image": "images/eagle-strafing-run",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "Eagle Airstrike",
+      "UUID": "com.helldivers2.stratagems.eagle-airstrike",
+      "Icon": "images/eagle-airstrike",
+      "Tooltip": "Eagle Strikes: ↑ → ↓ →",
+      "States": [
+        {
+          "Image": "images/eagle-airstrike",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "Eagle Cluster Bomb",
+      "UUID": "com.helldivers2.stratagems.eagle-cluster-bomb",
+      "Icon": "images/eagle-cluster-bomb",
+      "Tooltip": "Eagle Strikes: ↑ → ↓ ↓ →",
+      "States": [
+        {
+          "Image": "images/eagle-cluster-bomb",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "Eagle Smoke Strike",
+      "UUID": "com.helldivers2.stratagems.eagle-smoke-strike",
+      "Icon": "images/eagle-smoke-strike",
+      "Tooltip": "Eagle Strikes: ↑ → ↑ ↓",
+      "States": [
+        {
+          "Image": "images/eagle-smoke-strike",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "Eagle Napalm Airstrike",
+      "UUID": "com.helldivers2.stratagems.eagle-napalm-airstrike",
+      "Icon": "images/eagle-napalm-airstrike",
+      "Tooltip": "Eagle Strikes: ↑ → ↓ ↑",
+      "States": [
+        {
+          "Image": "images/eagle-napalm-airstrike",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "Eagle 110mm Rocket Pods",
+      "UUID": "com.helldivers2.stratagems.eagle-110mm-rocket-pods",
+      "Icon": "images/eagle-110mm-rocket-pods",
+      "Tooltip": "Eagle Strikes: ↑ → ↑ ←",
+      "States": [
+        {
+          "Image": "images/eagle-110mm-rocket-pods",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "Eagle 500kg Bomb",
+      "UUID": "com.helldivers2.stratagems.eagle-500kg-bomb",
+      "Icon": "images/eagle-500kg-bomb",
+      "Tooltip": "Eagle Strikes: ↑ → ↓ ↓ ↓",
+      "States": [
+        {
+          "Image": "images/eagle-500kg-bomb",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "MG-43 Machine Gun",
+      "UUID": "com.helldivers2.stratagems.mg-43-machine-gun",
+      "Icon": "images/machine-gun",
+      "Tooltip": "Support Weapons: ↓ ← ↓ ↑ →",
+      "States": [
+        {
+          "Image": "images/machine-gun",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "EAT-17 Expendable Anti-Tank",
+      "UUID": "com.helldivers2.stratagems.eat-17-expendable-anti-tank",
+      "Icon": "images/expendable-anti-tank",
+      "Tooltip": "Support Weapons: ↓ ↓ ← ↑ →",
+      "States": [
+        {
+          "Image": "images/expendable-anti-tank",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "M-105 Stalwart",
+      "UUID": "com.helldivers2.stratagems.m-105-stalwart",
+      "Icon": "images/stalwart",
+      "Tooltip": "Support Weapons: ↓ ← ↓ ↑ ↑ ←",
+      "States": [
+        {
+          "Image": "images/stalwart",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "LAS-98 Laser Cannon",
+      "UUID": "com.helldivers2.stratagems.las-98-laser-cannon",
+      "Icon": "images/laser-cannon",
+      "Tooltip": "Support Weapons: ↓ ← ↓ ↑ ←",
+      "States": [
+        {
+          "Image": "images/laser-cannon",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "APW-1 Anti-Materiel Rifle",
+      "UUID": "com.helldivers2.stratagems.apw-1-anti-materiel-rifle",
+      "Icon": "images/anti-materiel-rifle",
+      "Tooltip": "Support Weapons: ↓ ← → ↑ ↓",
+      "States": [
+        {
+          "Image": "images/anti-materiel-rifle",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "GL-21 Grenade Launcher",
+      "UUID": "com.helldivers2.stratagems.gl-21-grenade-launcher",
+      "Icon": "images/grenade-launcher",
+      "Tooltip": "Support Weapons: ↓ ← ↑ ← ↓",
+      "States": [
+        {
+          "Image": "images/grenade-launcher",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "GR-8 Recoilless Rifle",
+      "UUID": "com.helldivers2.stratagems.gr-8-recoilless-rifle",
+      "Icon": "images/recoilless-rifle",
+      "Tooltip": "Support Weapons: ↓ ← → → ←",
+      "States": [
+        {
+          "Image": "images/recoilless-rifle",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "FLAM-40 Flamethrower",
+      "UUID": "com.helldivers2.stratagems.flam-40-flamethrower",
+      "Icon": "images/flamethrower",
+      "Tooltip": "Support Weapons: ↓ ← ↑ ↓ ↑",
+      "States": [
+        {
+          "Image": "images/flamethrower",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "MG-206 Heavy Machine Gun",
+      "UUID": "com.helldivers2.stratagems.mg-206-heavy-machine-gun",
+      "Icon": "images/heavy-machine-gun",
+      "Tooltip": "Support Weapons: ↓ ← ↑ ↓ ↓",
+      "States": [
+        {
+          "Image": "images/heavy-machine-gun",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "AC-8 Autocannon",
+      "UUID": "com.helldivers2.stratagems.ac-8-autocannon",
+      "Icon": "images/autocannon",
+      "Tooltip": "Support Weapons: ↓ ← ↓ ↑ ↑ →",
+      "States": [
+        {
+          "Image": "images/autocannon",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "ARC-3 Arc Thrower",
+      "UUID": "com.helldivers2.stratagems.arc-3-arc-thrower",
+      "Icon": "images/arc-thrower",
+      "Tooltip": "Support Weapons: ↓ → ↓ ↑ ← ←",
+      "States": [
+        {
+          "Image": "images/arc-thrower",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "LAS-99 Quasar Cannon",
+      "UUID": "com.helldivers2.stratagems.las-99-quasar-cannon",
+      "Icon": "images/quasar-cannon",
+      "Tooltip": "Support Weapons: ↓ ↓ ↑ ← →",
+      "States": [
+        {
+          "Image": "images/quasar-cannon",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "RL-77 Airburst Rocket Launcher",
+      "UUID": "com.helldivers2.stratagems.rl-77-airburst-rocket-launcher",
+      "Icon": "images/airburst-rocket-launcher",
+      "Tooltip": "Support Weapons: ↓ ↑ ↑ ← →",
+      "States": [
+        {
+          "Image": "images/airburst-rocket-launcher",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "MLS-4X Commando",
+      "UUID": "com.helldivers2.stratagems.mls-4x-commando",
+      "Icon": "images/commando",
+      "Tooltip": "Support Weapons: ↓ ← ↑ ↓ →",
+      "States": [
+        {
+          "Image": "images/commando",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "FAF-14 Spear",
+      "UUID": "com.helldivers2.stratagems.faf-14-spear",
+      "Icon": "images/spear",
+      "Tooltip": "Support Weapons: ↓ ↓ ↑ ↓ ↓",
+      "States": [
+        {
+          "Image": "images/spear",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "RS-422 Railgun",
+      "UUID": "com.helldivers2.stratagems.rs-422-railgun",
+      "Icon": "images/railgun",
+      "Tooltip": "Support Weapons: ↓ → ↓ ↑ ← →",
+      "States": [
+        {
+          "Image": "images/railgun",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "StA-X3 W.A.S.P. Launcher",
+      "UUID": "com.helldivers2.stratagems.sta-x3-w-a-s-p-launcher",
+      "Icon": "images/w-a-s-p-launcher",
+      "Tooltip": "Support Weapons: ↓ ↓ ↑ ↓ →",
+      "States": [
+        {
+          "Image": "images/w-a-s-p-launcher",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "CQC-20 Breaching Hammer",
+      "UUID": "com.helldivers2.stratagems.cqc-20-breaching-hammer",
+      "Icon": "images/breaching-hammer",
+      "Tooltip": "Support Weapons: ↓ ← → ← ↑",
+      "States": [
+        {
+          "Image": "images/breaching-hammer",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "PLAS-45 Epoch",
+      "UUID": "com.helldivers2.stratagems.plas-45-epoch",
+      "Icon": "images/epoch",
+      "Tooltip": "Support Weapons: ↓ ← ↑ ← →",
+      "States": [
+        {
+          "Image": "images/epoch",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "MGX-42 Bullet Storm",
+      "UUID": "com.helldivers2.stratagems.mgx-42-bullet-storm",
+      "Icon": "images/bullet-storm",
+      "Tooltip": "Support Weapons: ↓ ← ↓ → ↑ ←",
+      "States": [
+        {
+          "Image": "images/bullet-storm",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "TX-41 Sterilizer",
+      "UUID": "com.helldivers2.stratagems.tx-41-sterilizer",
+      "Icon": "images/sterilizer",
+      "Tooltip": "Support Weapons: ↓ ← ↑ ↓ ←",
+      "States": [
+        {
+          "Image": "images/sterilizer",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "S-11 Speargun",
+      "UUID": "com.helldivers2.stratagems.s-11-speargun",
+      "Icon": "images/speargun",
+      "Tooltip": "Support Weapons: ↓ → ↓ ← ↑ →",
+      "States": [
+        {
+          "Image": "images/speargun",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "CQC-9 Defoliation Tool",
+      "UUID": "com.helldivers2.stratagems.cqc-9-defoliation-tool",
+      "Icon": "images/defoliation-tool",
+      "Tooltip": "Support Weapons: ↓ ← → → ↓",
+      "States": [
+        {
+          "Image": "images/defoliation-tool",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "GL-52 De-Escalator",
+      "UUID": "com.helldivers2.stratagems.gl-52-de-escalator",
+      "Icon": "images/de-escalator",
+      "Tooltip": "Support Weapons: ↓ → ↑ ← →",
+      "States": [
+        {
+          "Image": "images/de-escalator",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "EAT-700 Expendable Napalm",
+      "UUID": "com.helldivers2.stratagems.eat-700-expendable-napalm",
+      "Icon": "images/expendable-napalm",
+      "Tooltip": "Support Weapons: ↓ ↓ ← ↑ ←",
+      "States": [
+        {
+          "Image": "images/expendable-napalm",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "EAT-411 Leveller",
+      "UUID": "com.helldivers2.stratagems.eat-411-leveller",
+      "Icon": "images/leveller",
+      "Tooltip": "Support Weapons: ↓ ↓ ← ↑ ↓",
+      "States": [
+        {
+          "Image": "images/leveller",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "M-1000 Maxigun",
+      "UUID": "com.helldivers2.stratagems.m-1000-maxigun",
+      "Icon": "images/maxigun",
+      "Tooltip": "Support Weapons: ↓ ← → ↓ ↑ ↑",
+      "States": [
+        {
+          "Image": "images/maxigun",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "GL-28 Belt-Fed Grenade Launcher",
+      "UUID": "com.helldivers2.stratagems.gl-28-belt-fed-grenade-launcher",
+      "Icon": "images/belt-fed-grenade-launcher",
+      "Tooltip": "Support Weapons: ↓ ← ↑ ← ↑ ↑",
+      "States": [
+        {
+          "Image": "images/belt-fed-grenade-launcher",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "B/FLAM-80 Cremator",
+      "UUID": "com.helldivers2.stratagems.b-flam-80-cremator",
+      "Icon": "images/cremator",
+      "Tooltip": "Support Weapons: ↓ ↓ → ↓ ↑ ↑",
+      "States": [
+        {
+          "Image": "images/cremator",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "MS-11 Solo Silo",
+      "UUID": "com.helldivers2.stratagems.ms-11-solo-silo",
+      "Icon": "images/solo-silo",
+      "Tooltip": "Support Weapons: ↓ ↑ → ↓ ↓",
+      "States": [
+        {
+          "Image": "images/solo-silo",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "40-K Meltagun",
+      "UUID": "com.helldivers2.stratagems.40-k-meltagun",
+      "Icon": "images/meltagun",
+      "Tooltip": "Support Weapons: ↓ ← ↑ ← ← ↓",
+      "States": [
+        {
+          "Image": "images/meltagun",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "B/MD C4 Pack",
+      "UUID": "com.helldivers2.stratagems.b-md-c4-pack",
+      "Icon": "images/c4-pack",
+      "Tooltip": "Support Weapons: ↓ → ↑ ↑ → ↑",
+      "States": [
+        {
+          "Image": "images/c4-pack",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "CQC-1 One True Flag",
+      "UUID": "com.helldivers2.stratagems.cqc-1-one-true-flag",
+      "Icon": "images/one-true-flag",
+      "Tooltip": "Support Weapons: ↓ ← → → ↑",
+      "States": [
+        {
+          "Image": "images/one-true-flag",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "B-1 Supply Pack",
+      "UUID": "com.helldivers2.stratagems.b-1-supply-pack",
+      "Icon": "images/supply-pack",
+      "Tooltip": "Backpacks: ↓ ← ↓ ↑ ↑ ↓",
+      "States": [
+        {
+          "Image": "images/supply-pack",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "LIFT-850 Jump Pack",
+      "UUID": "com.helldivers2.stratagems.lift-850-jump-pack",
+      "Icon": "images/jump-pack",
+      "Tooltip": "Backpacks: ↓ ↑ ↑ ↓ ↑",
+      "States": [
+        {
+          "Image": "images/jump-pack",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "SH-20 Ballistic Shield Backpack",
+      "UUID": "com.helldivers2.stratagems.sh-20-ballistic-shield-backpack",
+      "Icon": "images/ballistic-shield-backpack",
+      "Tooltip": "Backpacks: ↓ ← ↓ ↓ ↑ ←",
+      "States": [
+        {
+          "Image": "images/ballistic-shield-backpack",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "AX/AR-23 Guard Dog",
+      "UUID": "com.helldivers2.stratagems.ax-ar-23-guard-dog",
+      "Icon": "images/guard-dog",
+      "Tooltip": "Backpacks: ↓ ↑ ← ↑ → ↓",
+      "States": [
+        {
+          "Image": "images/guard-dog",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "AX/LAS-5 Rover",
+      "UUID": "com.helldivers2.stratagems.ax-las-5-rover",
+      "Icon": "images/rover",
+      "Tooltip": "Backpacks: ↓ ↑ ← ↑ → →",
+      "States": [
+        {
+          "Image": "images/rover",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "SH-32 Shield Generator Pack",
+      "UUID": "com.helldivers2.stratagems.sh-32-shield-generator-pack",
+      "Icon": "images/shield-generator-pack",
+      "Tooltip": "Backpacks: ↓ ↑ ← → ← →",
+      "States": [
+        {
+          "Image": "images/shield-generator-pack",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "SH-51 Directional Shield",
+      "UUID": "com.helldivers2.stratagems.sh-51-directional-shield",
+      "Icon": "images/directional-shield",
+      "Tooltip": "Backpacks: ↓ ↑ ← → ↑ ↑",
+      "States": [
+        {
+          "Image": "images/directional-shield",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "AX/FLAM-75 Hot Dog",
+      "UUID": "com.helldivers2.stratagems.ax-flam-75-hot-dog",
+      "Icon": "images/hot-dog",
+      "Tooltip": "Backpacks: ↓ ↑ ← ↑ ← ←",
+      "States": [
+        {
+          "Image": "images/hot-dog",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "B-100 Portable Hellbomb",
+      "UUID": "com.helldivers2.stratagems.b-100-portable-hellbomb",
+      "Icon": "images/portable-hellbomb",
+      "Tooltip": "Backpacks: ↓ → ↑ ↑ ↑",
+      "States": [
+        {
+          "Image": "images/portable-hellbomb",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "AX/ARC-3 K-9",
+      "UUID": "com.helldivers2.stratagems.ax-arc-3-k-9",
+      "Icon": "images/k-9",
+      "Tooltip": "Backpacks: ↓ ↑ ← ↑ → ←",
+      "States": [
+        {
+          "Image": "images/k-9",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "LIFT-860 Hover Pack",
+      "UUID": "com.helldivers2.stratagems.lift-860-hover-pack",
+      "Icon": "images/hover-pack",
+      "Tooltip": "Backpacks: ↓ ↑ ↑ ↓ ← →",
+      "States": [
+        {
+          "Image": "images/hover-pack",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "AX/TX-13 Dog Breath",
+      "UUID": "com.helldivers2.stratagems.ax-tx-13-dog-breath",
+      "Icon": "images/dog-breath",
+      "Tooltip": "Backpacks: ↓ ↑ ← ↑ → ↑",
+      "States": [
+        {
+          "Image": "images/dog-breath",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "LIFT-182 Warp Pack",
+      "UUID": "com.helldivers2.stratagems.lift-182-warp-pack",
+      "Icon": "images/warp-pack",
+      "Tooltip": "Backpacks: ↓ ← → ↓ ← →",
+      "States": [
+        {
+          "Image": "images/warp-pack",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "M-103 Supply FRV",
+      "UUID": "com.helldivers2.stratagems.m-103-supply-frv",
+      "Icon": "images/supply-frv",
+      "Tooltip": "Vehicles: ← ↓ ← ← ↓ ↑ →",
+      "States": [
+        {
+          "Image": "images/supply-frv",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "TD-110 Maelstrom",
+      "UUID": "com.helldivers2.stratagems.td-110-maelstrom",
+      "Icon": "images/maelstrom",
+      "Tooltip": "Vehicles: ← ↓ → ↓ ← ↓ ↑ ← →",
+      "States": [
+        {
+          "Image": "images/maelstrom",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "M-104 Incinerator FRV",
+      "UUID": "com.helldivers2.stratagems.m-104-incinerator-frv",
+      "Icon": "images/incinerator-frv",
+      "Tooltip": "Vehicles: ← ↓ → ← ↓ ↑ ↑",
+      "States": [
+        {
+          "Image": "images/incinerator-frv",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "EXO-49 Emancipator Exosuit",
+      "UUID": "com.helldivers2.stratagems.exo-49-emancipator-exosuit",
+      "Icon": "images/emancipator-exosuit",
+      "Tooltip": "Vehicles: ← ↓ → ↑ ← ↓ ↑",
+      "States": [
+        {
+          "Image": "images/emancipator-exosuit",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "EXO-45 Patriot Exosuit",
+      "UUID": "com.helldivers2.stratagems.exo-45-patriot-exosuit",
+      "Icon": "images/patriot-exosuit",
+      "Tooltip": "Vehicles: ← ↓ → ↑ ← ↓ ↓",
+      "States": [
+        {
+          "Image": "images/patriot-exosuit",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "M-102 Gunner FRV",
+      "UUID": "com.helldivers2.stratagems.m-102-gunner-frv",
+      "Icon": "images/fast-recon-vehicle",
+      "Tooltip": "Vehicles: ← ↓ → ↓ → ↓ ↑",
+      "States": [
+        {
+          "Image": "images/fast-recon-vehicle",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "TD-220 Bastion MK XVI",
+      "UUID": "com.helldivers2.stratagems.td-220-bastion-mk-xvi",
+      "Icon": "images/bastion-mk-xvi",
+      "Tooltip": "Vehicles: ← ↓ → ↓ ← ↓ ↑ ↓ ↑",
+      "States": [
+        {
+          "Image": "images/bastion-mk-xvi",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "EXO-55 Breakthrough Exosuit",
+      "UUID": "com.helldivers2.stratagems.exo-55-breakthrough-exosuit",
+      "Icon": "images/breakthrough-exosuit",
+      "Tooltip": "Vehicles: ← ↓ → ← → ↓ ↑",
+      "States": [
+        {
+          "Image": "images/breakthrough-exosuit",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "EXO-51 Lumberer Exosuit",
+      "UUID": "com.helldivers2.stratagems.exo-51-lumberer-exosuit",
+      "Icon": "images/lumberer-exosuit",
+      "Tooltip": "Vehicles: ← ↓ → ↑ → ← ↑",
+      "States": [
+        {
+          "Image": "images/lumberer-exosuit",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "A/MG-43 Machine Gun Sentry",
+      "UUID": "com.helldivers2.stratagems.a-mg-43-machine-gun-sentry",
+      "Icon": "images/machine-gun-sentry",
+      "Tooltip": "Sentries: ↓ ↑ → → ↑",
+      "States": [
+        {
+          "Image": "images/machine-gun-sentry",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "A/G-16 Gatling Sentry",
+      "UUID": "com.helldivers2.stratagems.a-g-16-gatling-sentry",
+      "Icon": "images/gatling-sentry",
+      "Tooltip": "Sentries: ↓ ↑ → ←",
+      "States": [
+        {
+          "Image": "images/gatling-sentry",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "A/AC-8 Autocannon Sentry",
+      "UUID": "com.helldivers2.stratagems.a-ac-8-autocannon-sentry",
+      "Icon": "images/autocannon-sentry",
+      "Tooltip": "Sentries: ↓ ↑ → ↑ ← ↑",
+      "States": [
+        {
+          "Image": "images/autocannon-sentry",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "A/M-12 Mortar Sentry",
+      "UUID": "com.helldivers2.stratagems.a-m-12-mortar-sentry",
+      "Icon": "images/mortar-sentry",
+      "Tooltip": "Sentries: ↓ ↑ → → ↓",
+      "States": [
+        {
+          "Image": "images/mortar-sentry",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "A/MLS-4X Rocket Sentry",
+      "UUID": "com.helldivers2.stratagems.a-mls-4x-rocket-sentry",
+      "Icon": "images/rocket-sentry",
+      "Tooltip": "Sentries: ↓ ↑ → → ←",
+      "States": [
+        {
+          "Image": "images/rocket-sentry",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "A/ARC-3 Tesla Tower",
+      "UUID": "com.helldivers2.stratagems.a-arc-3-tesla-tower",
+      "Icon": "images/tesla-tower",
+      "Tooltip": "Sentries: ↓ ↑ → ↑ ← →",
+      "States": [
+        {
+          "Image": "images/tesla-tower",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "A/M-23 EMS Mortar Sentry",
+      "UUID": "com.helldivers2.stratagems.a-m-23-ems-mortar-sentry",
+      "Icon": "images/ems-mortar-sentry",
+      "Tooltip": "Sentries: ↓ ↑ → ↓ →",
+      "States": [
+        {
+          "Image": "images/ems-mortar-sentry",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "A/LAS-98 Laser Sentry",
+      "UUID": "com.helldivers2.stratagems.a-las-98-laser-sentry",
+      "Icon": "images/laser-sentry",
+      "Tooltip": "Sentries: ↓ ↑ → ↓ ↑ →",
+      "States": [
+        {
+          "Image": "images/laser-sentry",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "A/FLAM-40 Flame Sentry",
+      "UUID": "com.helldivers2.stratagems.a-flam-40-flame-sentry",
+      "Icon": "images/flame-sentry",
+      "Tooltip": "Sentries: ↓ ↑ → ↓ ↑ ↑",
+      "States": [
+        {
+          "Image": "images/flame-sentry",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "A/GM-17 Gas Mortar Sentry",
+      "UUID": "com.helldivers2.stratagems.a-gm-17-gas-mortar-sentry",
+      "Icon": "images/gas-mortar-sentry",
+      "Tooltip": "Sentries: ↓ ↑ → ↓ ←",
+      "States": [
+        {
+          "Image": "images/gas-mortar-sentry",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "MD-6 Anti-Personnel Minefield",
+      "UUID": "com.helldivers2.stratagems.md-6-anti-personnel-minefield",
+      "Icon": "images/anti-personnel-minefield",
+      "Tooltip": "Emplacements: ↓ ← ↑ →",
+      "States": [
+        {
+          "Image": "images/anti-personnel-minefield",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "MD-I4 Incendiary Mines",
+      "UUID": "com.helldivers2.stratagems.md-i4-incendiary-mines",
+      "Icon": "images/incendiary-mines",
+      "Tooltip": "Emplacements: ↓ ← ← ↓",
+      "States": [
+        {
+          "Image": "images/incendiary-mines",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "MD-17 Anti-Tank Mines",
+      "UUID": "com.helldivers2.stratagems.md-17-anti-tank-mines",
+      "Icon": "images/anti-tank-mines",
+      "Tooltip": "Emplacements: ↓ ← ↑ ↑",
+      "States": [
+        {
+          "Image": "images/anti-tank-mines",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "FX-12 Shield Generator Relay",
+      "UUID": "com.helldivers2.stratagems.fx-12-shield-generator-relay",
+      "Icon": "images/shield-generator-relay",
+      "Tooltip": "Emplacements: ↓ ↓ ← → ← →",
+      "States": [
+        {
+          "Image": "images/shield-generator-relay",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "E/MG-101 HMG Emplacement",
+      "UUID": "com.helldivers2.stratagems.e-mg-101-hmg-emplacement",
+      "Icon": "images/hmg-emplacement",
+      "Tooltip": "Emplacements: ↓ ↑ ← → → ←",
+      "States": [
+        {
+          "Image": "images/hmg-emplacement",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "E/GL-21 Grenadier Battlement",
+      "UUID": "com.helldivers2.stratagems.e-gl-21-grenadier-battlement",
+      "Icon": "images/grenadier-battlement",
+      "Tooltip": "Emplacements: ↓ → ↓ ← →",
+      "States": [
+        {
+          "Image": "images/grenadier-battlement",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "MD-8 Gas Mines",
+      "UUID": "com.helldivers2.stratagems.md-8-gas-mines",
+      "Icon": "images/gas-mines",
+      "Tooltip": "Emplacements: ↓ ← ← →",
+      "States": [
+        {
+          "Image": "images/gas-mines",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "E/AT-12 Anti-Tank Emplacement",
+      "UUID": "com.helldivers2.stratagems.e-at-12-anti-tank-emplacement",
+      "Icon": "images/anti-tank-emplacement",
+      "Tooltip": "Emplacements: ↓ ↑ ← → → →",
+      "States": [
+        {
+          "Image": "images/anti-tank-emplacement",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "Eagle Rearm",
+      "UUID": "com.helldivers2.stratagems.eagle-rearm",
+      "Icon": "images/eagle-rearm",
+      "Tooltip": "Mission Stratagems - Ship: ↑ ↑ ← ↑ →",
+      "States": [
+        {
+          "Image": "images/eagle-rearm",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "Call In Super Destroyer",
+      "UUID": "com.helldivers2.stratagems.call-in-super-destroyer",
+      "Icon": "images/call-in-super-destroyer",
+      "Tooltip": "Mission Stratagems - Ship: ↑ ↑ ↓ ↓ ← → ← →",
+      "States": [
+        {
+          "Image": "images/call-in-super-destroyer",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "SoS Beacon",
+      "UUID": "com.helldivers2.stratagems.sos-beacon",
+      "Icon": "images/sos-beacon",
+      "Tooltip": "Mission Stratagems - Ship: ↑ ↓ → ↑",
+      "States": [
+        {
+          "Image": "images/sos-beacon",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "Reinforce",
+      "UUID": "com.helldivers2.stratagems.reinforce",
+      "Icon": "images/reinforce",
+      "Tooltip": "Mission Stratagems - Ship: ↑ ↓ → ← ↑",
+      "States": [
+        {
+          "Image": "images/reinforce",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "Resupply",
+      "UUID": "com.helldivers2.stratagems.resupply",
+      "Icon": "images/resupply",
+      "Tooltip": "Mission Stratagems - Ship: ↓ ↓ ↑ →",
+      "States": [
+        {
+          "Image": "images/resupply",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "SSSD Delivery",
+      "UUID": "com.helldivers2.stratagems.sssd-delivery",
+      "Icon": "images/upload-data",
+      "Tooltip": "Mission Stratagems - Objective: ↓ ↓ ↓ ↑ ↑",
+      "States": [
+        {
+          "Image": "images/upload-data",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "Seismic Probe",
+      "UUID": "com.helldivers2.stratagems.seismic-probe",
+      "Icon": "images/seismic-probe",
+      "Tooltip": "Mission Stratagems - Objective: ↑ ↑ ← → ↓ ↓",
+      "States": [
+        {
+          "Image": "images/seismic-probe",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "SEAF Artillery",
+      "UUID": "com.helldivers2.stratagems.seaf-artillery",
+      "Icon": "images/seaf-artillery",
+      "Tooltip": "Mission Stratagems - Objective: → ↑ ↑ ↓",
+      "States": [
+        {
+          "Image": "images/seaf-artillery",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "Hive Breaker Drill",
+      "UUID": "com.helldivers2.stratagems.hive-breaker-drill",
+      "Icon": "images/drill",
+      "Tooltip": "Mission Stratagems - Objective: ← ↑ ↓ → ↓ ↓",
+      "States": [
+        {
+          "Image": "images/drill",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "Portable Comms Relay",
+      "UUID": "com.helldivers2.stratagems.portable-comms-relay",
+      "Icon": "images/cargo-container",
+      "Tooltip": "Mission Stratagems - Objective: ↑ ↑ ↓ ↓ ← ← ↓",
+      "States": [
+        {
+          "Image": "images/cargo-container",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "Tactical Video Camera",
+      "UUID": "com.helldivers2.stratagems.tactical-video-camera",
+      "Icon": "images/tactical-video-camera",
+      "Tooltip": "Mission Stratagems - Objective: → ↓ ↓ ↑ ← ← ↑",
+      "States": [
+        {
+          "Image": "images/tactical-video-camera",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "Upload Data",
+      "UUID": "com.helldivers2.stratagems.upload-data",
+      "Icon": "images/upload-data",
+      "Tooltip": "Mission Stratagems - Objective: ← → ↑ ↑ ↑",
+      "States": [
+        {
+          "Image": "images/upload-data",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "Super Earth Flag",
+      "UUID": "com.helldivers2.stratagems.super-earth-flag",
+      "Icon": "images/super-earth-flag",
+      "Tooltip": "Mission Stratagems - Objective: ↓ ↑ ↓ ↑",
+      "States": [
+        {
+          "Image": "images/super-earth-flag",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "Cargo Container",
+      "UUID": "com.helldivers2.stratagems.cargo-container",
+      "Icon": "images/cargo-container",
+      "Tooltip": "Mission Stratagems - Objective: ↑ ↑ ↓ ↓ → ↓",
+      "States": [
+        {
+          "Image": "images/cargo-container",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "Dark Fluid Vessel",
+      "UUID": "com.helldivers2.stratagems.dark-fluid-vessel",
+      "Icon": "images/dark-fluid-vessel",
+      "Tooltip": "Mission Stratagems - Objective: ↑ ← → ↓ ↑ ↑",
+      "States": [
+        {
+          "Image": "images/dark-fluid-vessel",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "Activate E-711 Extraction Drill",
+      "UUID": "com.helldivers2.stratagems.activate-e-711-extraction-drill",
+      "Icon": "images/drill",
+      "Tooltip": "Mission Stratagems - Objective: ↓ ↓ ← ← ↓ ↓",
+      "States": [
+        {
+          "Image": "images/drill",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "Prospecting Drill",
+      "UUID": "com.helldivers2.stratagems.prospecting-drill",
+      "Icon": "images/drill",
+      "Tooltip": "Mission Stratagems - Objective: ↓ ↓ ← → ↓ ↓",
+      "States": [
+        {
+          "Image": "images/drill",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "Aquifer Drill",
+      "UUID": "com.helldivers2.stratagems.aquifer-drill",
+      "Icon": "images/drill",
+      "Tooltip": "Mission Stratagems - Objective: ← ← ← ↑ ↓ → ↓ ↓",
+      "States": [
+        {
+          "Image": "images/drill",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "Reinforcement Pods",
+      "UUID": "com.helldivers2.stratagems.reinforcement-pods",
+      "Icon": "images/upload-data",
+      "Tooltip": "Mission Stratagems - Objective: ← → ↑ ↑ ↑",
+      "States": [
+        {
+          "Image": "images/upload-data",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "Tectonic Drill",
+      "UUID": "com.helldivers2.stratagems.tectonic-drill",
+      "Icon": "images/drill",
+      "Tooltip": "Mission Stratagems - Objective: ↑ ↓ ↑ ↓ ↑ ↓",
+      "States": [
+        {
+          "Image": "images/drill",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "NUX-223 Hellbomb",
+      "UUID": "com.helldivers2.stratagems.nux-223-hellbomb",
+      "Icon": "images/hellbomb",
+      "Tooltip": "Mission Stratagems - Objective: ↓ ↑ ← ↓ ↑ → ↓ ↑",
+      "States": [
+        {
+          "Image": "images/hellbomb",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    },
+    {
+      "Name": "Orbital Illumination Flare",
+      "UUID": "com.helldivers2.stratagems.orbital-illumination-flare",
+      "Icon": "images/orbital-illumination-flare",
+      "Tooltip": "Mission Stratagems - Unavailable: → → ← ←",
+      "States": [
+        {
+          "Image": "images/orbital-illumination-flare",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ],
+      "Controllers": [
+        "Keypad"
+      ],
+      "UserTitleEnabled": false,
+      "SupportedInMultiActions": true,
+      "PropertyInspectorPath": "propertyInspector/index.html"
+    }
+  ]
+}

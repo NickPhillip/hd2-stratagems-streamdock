@@ -1,0 +1,12 @@
+# Build output (published as GitHub Release assets, not committed)
+dist/
+
+# Icons downloaded from the wiki (regenerate with: node tools/fetch-icons.js)
+data/svg/
+
+# Local plugin log
+com.helldivers2.stratagems.sdPlugin/plugin/plugin.log
+
+# Test leftovers
+tools/keylog.txt
+tools/keylog.txt.ready

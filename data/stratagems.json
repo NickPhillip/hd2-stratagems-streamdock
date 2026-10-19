@@ -1,0 +1,1039 @@
+[
+  {
+    "name": "Orbital Precision Strike",
+    "category": "Orbital Strikes",
+    "code": "RRU",
+    "cooldown": 80,
+    "iconFile": "Orbital_Precision_Strike_Stratagem_Icon_Background.svg",
+    "callTime": 4.45,
+    "callTimeUpgraded": 3.45
+  },
+  {
+    "name": "Orbital Gatling Barrage",
+    "category": "Orbital Strikes",
+    "code": "RDLUU",
+    "cooldown": 70,
+    "iconFile": "Orbital_Gatling_Barrage_Stratagem_Icon_Background.svg",
+    "callTime": 3.05,
+    "callTimeUpgraded": 2.05
+  },
+  {
+    "name": "Orbital Gas Strike",
+    "category": "Orbital Strikes",
+    "code": "RRDR",
+    "cooldown": 75,
+    "iconFile": "Orbital_Gas_Strike_Stratagem_Icon_Background.svg",
+    "callTime": 4.45,
+    "callTimeUpgraded": 3.45
+  },
+  {
+    "name": "Orbital 120mm HE Barrage",
+    "category": "Orbital Strikes",
+    "code": "RRDLRD",
+    "cooldown": 180,
+    "iconFile": "Orbital_120mm_HE_Barrage_Stratagem_Icon_Background.svg",
+    "callTime": 7.45,
+    "callTimeUpgraded": 6.45
+  },
+  {
+    "name": "Orbital Airburst Strike",
+    "category": "Orbital Strikes",
+    "code": "RRR",
+    "cooldown": 100,
+    "iconFile": "Orbital_Airburst_Strike_Stratagem_Icon_Background.svg",
+    "callTime": 4.45,
+    "callTimeUpgraded": 3.45
+  },
+  {
+    "name": "Orbital Smoke Strike",
+    "category": "Orbital Strikes",
+    "code": "RRDU",
+    "cooldown": 75,
+    "iconFile": "Orbital_Smoke_Strike_Stratagem_Icon_Background.svg",
+    "callTime": 4.45,
+    "callTimeUpgraded": 3.45
+  },
+  {
+    "name": "Orbital EMS Strike",
+    "category": "Orbital Strikes",
+    "code": "RRLD",
+    "cooldown": 75,
+    "iconFile": "Orbital_EMS_Strike_Stratagem_Icon_Background.svg",
+    "callTime": 4.45,
+    "callTimeUpgraded": 3.45
+  },
+  {
+    "name": "Orbital 380mm HE Barrage",
+    "category": "Orbital Strikes",
+    "code": "RDUULDD",
+    "cooldown": 240,
+    "iconFile": "Orbital_380mm_HE_Barrage_Stratagem_Icon_Background.svg",
+    "callTime": 8.45,
+    "callTimeUpgraded": 7.45
+  },
+  {
+    "name": "Orbital Walking Barrage",
+    "category": "Orbital Strikes",
+    "code": "RDRDRD",
+    "cooldown": 240,
+    "iconFile": "Orbital_Walking_Barrage_Stratagem_Icon_Background.svg",
+    "callTime": 5.45,
+    "callTimeUpgraded": 4.45
+  },
+  {
+    "name": "Orbital Laser",
+    "category": "Orbital Strikes",
+    "code": "RDURD",
+    "cooldown": 300,
+    "iconFile": "Orbital_Laser_Stratagem_Icon_Background.svg",
+    "callTime": 2,
+    "callTimeUpgraded": 1
+  },
+  {
+    "name": "Orbital Napalm Barrage",
+    "category": "Orbital Strikes",
+    "code": "RRDLRU",
+    "cooldown": 240,
+    "iconFile": "Orbital_Napalm_Barrage_Stratagem_Icon_Background.svg",
+    "callTime": 7.45,
+    "callTimeUpgraded": 6.45
+  },
+  {
+    "name": "Orbital Railcannon Strike",
+    "category": "Orbital Strikes",
+    "code": "RUDDR",
+    "cooldown": 180,
+    "iconFile": "Orbital_Railcannon_Strike_Stratagem_Icon_Background.svg",
+    "callTime": 0,
+    "callTimeUpgraded": null
+  },
+  {
+    "name": "Eagle Gas Airstrike",
+    "category": "Eagle Strikes",
+    "code": "URLR",
+    "cooldown": 15,
+    "iconFile": "Eagle_Gas_Airstrike_Stratagem_Icon_Background.svg",
+    "callTime": 4.1,
+    "callTimeUpgraded": null
+  },
+  {
+    "name": "Eagle Strafing Run",
+    "category": "Eagle Strikes",
+    "code": "URR",
+    "cooldown": 15,
+    "iconFile": "Eagle_Strafing_Run_Stratagem_Icon_Background.svg",
+    "callTime": 2.4,
+    "callTimeUpgraded": null
+  },
+  {
+    "name": "Eagle Airstrike",
+    "category": "Eagle Strikes",
+    "code": "URDR",
+    "cooldown": 15,
+    "iconFile": "Eagle_Airstrike_Stratagem_Icon_Background.svg",
+    "callTime": 4.1,
+    "callTimeUpgraded": null
+  },
+  {
+    "name": "Eagle Cluster Bomb",
+    "category": "Eagle Strikes",
+    "code": "URDDR",
+    "cooldown": 15,
+    "iconFile": "Eagle_Cluster_Bomb_Stratagem_Icon_Background.svg",
+    "callTime": 4.1,
+    "callTimeUpgraded": null
+  },
+  {
+    "name": "Eagle Smoke Strike",
+    "category": "Eagle Strikes",
+    "code": "URUD",
+    "cooldown": 15,
+    "iconFile": "Eagle_Smoke_Strike_Stratagem_Icon_Background.svg",
+    "callTime": 4.4,
+    "callTimeUpgraded": null
+  },
+  {
+    "name": "Eagle Napalm Airstrike",
+    "category": "Eagle Strikes",
+    "code": "URDU",
+    "cooldown": 15,
+    "iconFile": "Eagle_Napalm_Airstrike_Stratagem_Icon_Background.svg",
+    "callTime": 4.1,
+    "callTimeUpgraded": null
+  },
+  {
+    "name": "Eagle 110mm Rocket Pods",
+    "category": "Eagle Strikes",
+    "code": "URUL",
+    "cooldown": 15,
+    "iconFile": "Eagle_110mm_Rocket_Pods_Stratagem_Icon_Background.svg",
+    "callTime": 3.4,
+    "callTimeUpgraded": null
+  },
+  {
+    "name": "Eagle 500kg Bomb",
+    "category": "Eagle Strikes",
+    "code": "URDDD",
+    "cooldown": 15,
+    "iconFile": "Eagle_500kg_Bomb_Stratagem_Icon_Background.svg",
+    "callTime": 3.45,
+    "callTimeUpgraded": null
+  },
+  {
+    "name": "MG-43 Machine Gun",
+    "category": "Support Weapons",
+    "code": "DLDUR",
+    "cooldown": 480,
+    "iconFile": "Machine_Gun_Stratagem_Icon_Background.svg",
+    "callTime": 7.75,
+    "callTimeUpgraded": 4.75
+  },
+  {
+    "name": "EAT-17 Expendable Anti-Tank",
+    "category": "Support Weapons",
+    "code": "DDLUR",
+    "cooldown": 70,
+    "iconFile": "Expendable_Anti-Tank_Stratagem_Icon_Background.svg",
+    "callTime": 6.75,
+    "callTimeUpgraded": 3.75
+  },
+  {
+    "name": "M-105 Stalwart",
+    "category": "Support Weapons",
+    "code": "DLDUUL",
+    "cooldown": 480,
+    "iconFile": "Stalwart_Stratagem_Icon_Background.svg",
+    "callTime": 7.75,
+    "callTimeUpgraded": 4.75
+  },
+  {
+    "name": "LAS-98 Laser Cannon",
+    "category": "Support Weapons",
+    "code": "DLDUL",
+    "cooldown": 480,
+    "iconFile": "Laser_Cannon_Stratagem_Icon_Background.svg",
+    "callTime": 7.75,
+    "callTimeUpgraded": 4.75
+  },
+  {
+    "name": "APW-1 Anti-Materiel Rifle",
+    "category": "Support Weapons",
+    "code": "DLRUD",
+    "cooldown": 480,
+    "iconFile": "Anti-Materiel_Rifle_Stratagem_Icon_Background.svg",
+    "callTime": 7.75,
+    "callTimeUpgraded": 4.75
+  },
+  {
+    "name": "GL-21 Grenade Launcher",
+    "category": "Support Weapons",
+    "code": "DLULD",
+    "cooldown": 480,
+    "iconFile": "Grenade_Launcher_Stratagem_Icon_Background.svg",
+    "callTime": 7.75,
+    "callTimeUpgraded": 4.75
+  },
+  {
+    "name": "GR-8 Recoilless Rifle",
+    "category": "Support Weapons",
+    "code": "DLRRL",
+    "cooldown": 480,
+    "iconFile": "Recoilless_Rifle_Stratagem_Icon_Background.svg",
+    "callTime": 7.75,
+    "callTimeUpgraded": 4.75
+  },
+  {
+    "name": "FLAM-40 Flamethrower",
+    "category": "Support Weapons",
+    "code": "DLUDU",
+    "cooldown": 480,
+    "iconFile": "Flamethrower_Stratagem_Icon_Background.svg",
+    "callTime": 7.75,
+    "callTimeUpgraded": 4.75
+  },
+  {
+    "name": "MG-206 Heavy Machine Gun",
+    "category": "Support Weapons",
+    "code": "DLUDD",
+    "cooldown": 480,
+    "iconFile": "Heavy_Machine_Gun_Stratagem_Icon_Background.svg",
+    "callTime": 7.75,
+    "callTimeUpgraded": 4.75
+  },
+  {
+    "name": "AC-8 Autocannon",
+    "category": "Support Weapons",
+    "code": "DLDUUR",
+    "cooldown": 480,
+    "iconFile": "Autocannon_Stratagem_Icon_Background.svg",
+    "callTime": 7.75,
+    "callTimeUpgraded": 4.75
+  },
+  {
+    "name": "ARC-3 Arc Thrower",
+    "category": "Support Weapons",
+    "code": "DRDULL",
+    "cooldown": 480,
+    "iconFile": "Arc_Thrower_Stratagem_Icon_Background.svg",
+    "callTime": 7.75,
+    "callTimeUpgraded": 4.75
+  },
+  {
+    "name": "LAS-99 Quasar Cannon",
+    "category": "Support Weapons",
+    "code": "DDULR",
+    "cooldown": 480,
+    "iconFile": "Quasar_Cannon_Stratagem_Icon_Background.svg",
+    "callTime": 7.75,
+    "callTimeUpgraded": 4.75
+  },
+  {
+    "name": "RL-77 Airburst Rocket Launcher",
+    "category": "Support Weapons",
+    "code": "DUULR",
+    "cooldown": 480,
+    "iconFile": "Airburst_Rocket_Launcher_Stratagem_Icon_Background.svg",
+    "callTime": 7.75,
+    "callTimeUpgraded": 4.75
+  },
+  {
+    "name": "MLS-4X Commando",
+    "category": "Support Weapons",
+    "code": "DLUDR",
+    "cooldown": 120,
+    "iconFile": "Commando_Stratagem_Icon_Background.svg",
+    "callTime": 7.75,
+    "callTimeUpgraded": 4.75
+  },
+  {
+    "name": "FAF-14 Spear",
+    "category": "Support Weapons",
+    "code": "DDUDD",
+    "cooldown": 480,
+    "iconFile": "Spear_Stratagem_Icon_Background.svg",
+    "callTime": 7.75,
+    "callTimeUpgraded": 4.75
+  },
+  {
+    "name": "RS-422 Railgun",
+    "category": "Support Weapons",
+    "code": "DRDULR",
+    "cooldown": 480,
+    "iconFile": "Railgun_Stratagem_Icon_Background.svg",
+    "callTime": 7.75,
+    "callTimeUpgraded": 4.75
+  },
+  {
+    "name": "StA-X3 W.A.S.P. Launcher",
+    "category": "Support Weapons",
+    "code": "DDUDR",
+    "cooldown": 480,
+    "iconFile": "W.A.S.P._Launcher_Stratagem_Icon_Background.svg",
+    "callTime": 7.75,
+    "callTimeUpgraded": 4.75
+  },
+  {
+    "name": "CQC-20 Breaching Hammer",
+    "category": "Support Weapons",
+    "code": "DLRLU",
+    "cooldown": 480,
+    "iconFile": "Breaching_Hammer_Stratagem_Icon_Background.svg",
+    "callTime": 7.75,
+    "callTimeUpgraded": 4.75
+  },
+  {
+    "name": "PLAS-45 Epoch",
+    "category": "Support Weapons",
+    "code": "DLULR",
+    "cooldown": 480,
+    "iconFile": "Epoch_Stratagem_Icon_Background.svg",
+    "callTime": 7.75,
+    "callTimeUpgraded": 4.75
+  },
+  {
+    "name": "MGX-42 Bullet Storm",
+    "category": "Support Weapons",
+    "code": "DLDRUL",
+    "cooldown": 70,
+    "iconFile": "Bullet_Storm_Stratagem_Icon_Background.svg",
+    "callTime": 6.75,
+    "callTimeUpgraded": 3.75
+  },
+  {
+    "name": "TX-41 Sterilizer",
+    "category": "Support Weapons",
+    "code": "DLUDL",
+    "cooldown": 480,
+    "iconFile": "Sterilizer_Stratagem_Icon_Background.svg",
+    "callTime": 7.75,
+    "callTimeUpgraded": 4.75
+  },
+  {
+    "name": "S-11 Speargun",
+    "category": "Support Weapons",
+    "code": "DRDLUR",
+    "cooldown": 480,
+    "iconFile": "Speargun_Stratagem_Icon_Background.svg",
+    "callTime": 7.75,
+    "callTimeUpgraded": 4.75
+  },
+  {
+    "name": "CQC-9 Defoliation Tool",
+    "category": "Support Weapons",
+    "code": "DLRRD",
+    "cooldown": 480,
+    "iconFile": "Defoliation_Tool_Stratagem_Icon_Background.svg",
+    "callTime": 7.75,
+    "callTimeUpgraded": 4.75
+  },
+  {
+    "name": "GL-52 De-Escalator",
+    "category": "Support Weapons",
+    "code": "DRULR",
+    "cooldown": 480,
+    "iconFile": "De-Escalator_Stratagem_Icon_Background.svg",
+    "callTime": 7.75,
+    "callTimeUpgraded": 4.75
+  },
+  {
+    "name": "EAT-700 Expendable Napalm",
+    "category": "Support Weapons",
+    "code": "DDLUL",
+    "cooldown": 140,
+    "iconFile": "Expendable_Napalm_Stratagem_Icon_Background.svg",
+    "callTime": 7.75,
+    "callTimeUpgraded": 4.75
+  },
+  {
+    "name": "EAT-411 Leveller",
+    "category": "Support Weapons",
+    "code": "DDLUD",
+    "cooldown": 140,
+    "iconFile": "Leveller_Stratagem_Icon_Background.svg",
+    "callTime": 7.75,
+    "callTimeUpgraded": 4.75
+  },
+  {
+    "name": "M-1000 Maxigun",
+    "category": "Support Weapons",
+    "code": "DLRDUU",
+    "cooldown": 480,
+    "iconFile": "Maxigun_Stratagem_Icon_Background.svg",
+    "callTime": 7.75,
+    "callTimeUpgraded": 4.75
+  },
+  {
+    "name": "GL-28 Belt-Fed Grenade Launcher",
+    "category": "Support Weapons",
+    "code": "DLULUU",
+    "cooldown": 480,
+    "iconFile": "Belt-Fed_Grenade_Launcher_Stratagem_Icon_Background.svg",
+    "callTime": 7.75,
+    "callTimeUpgraded": 4.75
+  },
+  {
+    "name": "B/FLAM-80 Cremator",
+    "category": "Support Weapons",
+    "code": "DDRDUU",
+    "cooldown": 480,
+    "iconFile": "Cremator_Stratagem_Icon_Background.svg",
+    "callTime": 7.75,
+    "callTimeUpgraded": 4.75
+  },
+  {
+    "name": "MS-11 Solo Silo",
+    "category": "Support Weapons",
+    "code": "DURDD",
+    "cooldown": 180,
+    "iconFile": "Solo_Silo_Stratagem_Icon_Background.svg",
+    "callTime": 7.75,
+    "callTimeUpgraded": 4.75
+  },
+  {
+    "name": "40-K Meltagun",
+    "category": "Support Weapons",
+    "code": "DLULLD",
+    "cooldown": 480,
+    "iconFile": "Meltagun_Stratagem_Icon_Background.svg",
+    "callTime": 7.75,
+    "callTimeUpgraded": 4.75
+  },
+  {
+    "name": "B/MD C4 Pack",
+    "category": "Support Weapons",
+    "code": "DRUURU",
+    "cooldown": 480,
+    "iconFile": "C4_Pack_Stratagem_Icon_Background.svg",
+    "callTime": 9.75,
+    "callTimeUpgraded": null
+  },
+  {
+    "name": "CQC-1 One True Flag",
+    "category": "Support Weapons",
+    "code": "DLRRU",
+    "cooldown": 480,
+    "iconFile": "One_True_Flag_Stratagem_Icon_Background.svg",
+    "callTime": 7.75,
+    "callTimeUpgraded": 4.75,
+    "callTimeEstimated": true
+  },
+  {
+    "name": "B-1 Supply Pack",
+    "category": "Backpacks",
+    "code": "DLDUUD",
+    "cooldown": 480,
+    "iconFile": "Supply_Pack_Stratagem_Icon_Background.svg",
+    "callTime": 9.75,
+    "callTimeUpgraded": null
+  },
+  {
+    "name": "LIFT-850 Jump Pack",
+    "category": "Backpacks",
+    "code": "DUUDU",
+    "cooldown": 480,
+    "iconFile": "Jump_Pack_Stratagem_Icon_Background.svg",
+    "callTime": 9.75,
+    "callTimeUpgraded": null
+  },
+  {
+    "name": "SH-20 Ballistic Shield Backpack",
+    "category": "Backpacks",
+    "code": "DLDDUL",
+    "cooldown": 240,
+    "iconFile": "Ballistic_Shield_Backpack_Stratagem_Icon_Background.svg",
+    "callTime": 9.75,
+    "callTimeUpgraded": null
+  },
+  {
+    "name": "AX/AR-23 Guard Dog",
+    "category": "Backpacks",
+    "code": "DULURD",
+    "cooldown": 480,
+    "iconFile": "Guard_Dog_Stratagem_Icon_Background.svg",
+    "callTime": 9.75,
+    "callTimeUpgraded": null
+  },
+  {
+    "name": "AX/LAS-5 Rover",
+    "category": "Backpacks",
+    "code": "DULURR",
+    "cooldown": 480,
+    "iconFile": "Rover_Stratagem_Icon_Background.svg",
+    "callTime": 9.75,
+    "callTimeUpgraded": null
+  },
+  {
+    "name": "SH-32 Shield Generator Pack",
+    "category": "Backpacks",
+    "code": "DULRLR",
+    "cooldown": 480,
+    "iconFile": "Shield_Generator_Pack_Stratagem_Icon_Background.svg",
+    "callTime": 9.75,
+    "callTimeUpgraded": null
+  },
+  {
+    "name": "SH-51 Directional Shield",
+    "category": "Backpacks",
+    "code": "DULRUU",
+    "cooldown": 300,
+    "iconFile": "Directional_Shield_Stratagem_Icon_Background.svg",
+    "callTime": 9.75,
+    "callTimeUpgraded": null
+  },
+  {
+    "name": "AX/FLAM-75 Hot Dog",
+    "category": "Backpacks",
+    "code": "DULULL",
+    "cooldown": 480,
+    "iconFile": "Hot_Dog_Stratagem_Icon_Background.svg",
+    "callTime": 9.75,
+    "callTimeUpgraded": null
+  },
+  {
+    "name": "B-100 Portable Hellbomb",
+    "category": "Backpacks",
+    "code": "DRUUU",
+    "cooldown": 300,
+    "iconFile": "Portable_Hellbomb_Stratagem_Icon_Background.svg",
+    "callTime": 9.75,
+    "callTimeUpgraded": null
+  },
+  {
+    "name": "AX/ARC-3 K-9",
+    "category": "Backpacks",
+    "code": "DULURL",
+    "cooldown": 480,
+    "iconFile": "K-9_Stratagem_Icon_Background.svg",
+    "callTime": 9.75,
+    "callTimeUpgraded": null
+  },
+  {
+    "name": "LIFT-860 Hover Pack",
+    "category": "Backpacks",
+    "code": "DUUDLR",
+    "cooldown": 480,
+    "iconFile": "Hover_Pack_Stratagem_Icon_Background.svg",
+    "callTime": 9.75,
+    "callTimeUpgraded": null
+  },
+  {
+    "name": "AX/TX-13 Dog Breath",
+    "category": "Backpacks",
+    "code": "DULURU",
+    "cooldown": 480,
+    "iconFile": "Dog_Breath_Stratagem_Icon_Background.svg",
+    "callTime": 9.75,
+    "callTimeUpgraded": null
+  },
+  {
+    "name": "LIFT-182 Warp Pack",
+    "category": "Backpacks",
+    "code": "DLRDLR",
+    "cooldown": 480,
+    "iconFile": "Warp_Pack_Stratagem_Icon_Background.svg",
+    "callTime": 9.75,
+    "callTimeUpgraded": null
+  },
+  {
+    "name": "M-103 Supply FRV",
+    "category": "Vehicles",
+    "code": "LDLLDUR",
+    "cooldown": 480,
+    "iconFile": "Supply_FRV_Stratagem_Icon_Background.svg",
+    "callTime": 10.5,
+    "callTimeUpgraded": null
+  },
+  {
+    "name": "TD-110 Maelstrom",
+    "category": "Vehicles",
+    "code": "LDRDLDULR",
+    "cooldown": 780,
+    "iconFile": "Maelstrom_Stratagem_Icon_Background.svg",
+    "callTime": 10.5,
+    "callTimeUpgraded": null
+  },
+  {
+    "name": "M-104 Incinerator FRV",
+    "category": "Vehicles",
+    "code": "LDRLDUU",
+    "cooldown": 480,
+    "iconFile": "Incinerator_FRV_Stratagem_Icon_Background.svg",
+    "callTime": 10.5,
+    "callTimeUpgraded": null
+  },
+  {
+    "name": "EXO-49 Emancipator Exosuit",
+    "category": "Vehicles",
+    "code": "LDRULDU",
+    "cooldown": 420,
+    "iconFile": "Emancipator_Exosuit_Stratagem_Icon_Background.svg",
+    "callTime": 10.5,
+    "callTimeUpgraded": null
+  },
+  {
+    "name": "EXO-45 Patriot Exosuit",
+    "category": "Vehicles",
+    "code": "LDRULDD",
+    "cooldown": 420,
+    "iconFile": "Patriot_Exosuit_Stratagem_Icon_Background.svg",
+    "callTime": 10.5,
+    "callTimeUpgraded": null
+  },
+  {
+    "name": "M-102 Gunner FRV",
+    "category": "Vehicles",
+    "code": "LDRDRDU",
+    "cooldown": 480,
+    "iconFile": "Fast_Recon_Vehicle_Stratagem_Icon_Background.svg",
+    "callTime": 10.5,
+    "callTimeUpgraded": null
+  },
+  {
+    "name": "TD-220 Bastion MK XVI",
+    "category": "Vehicles",
+    "code": "LDRDLDUDU",
+    "cooldown": 780,
+    "iconFile": "Bastion_MK_XVI_Stratagem_Icon_Background.svg",
+    "callTime": 10.5,
+    "callTimeUpgraded": null
+  },
+  {
+    "name": "EXO-55 Breakthrough Exosuit",
+    "category": "Vehicles",
+    "code": "LDRLRDU",
+    "cooldown": 420,
+    "iconFile": "Breakthrough_Exosuit_Stratagem_Icon_Background.svg",
+    "callTime": 10.5,
+    "callTimeUpgraded": null
+  },
+  {
+    "name": "EXO-51 Lumberer Exosuit",
+    "category": "Vehicles",
+    "code": "LDRURLU",
+    "cooldown": 420,
+    "iconFile": "Lumberer_Exosuit_Stratagem_Icon_Background.svg",
+    "callTime": 10.5,
+    "callTimeUpgraded": null
+  },
+  {
+    "name": "A/MG-43 Machine Gun Sentry",
+    "category": "Sentries",
+    "code": "DURRU",
+    "cooldown": 90,
+    "iconFile": "Machine_Gun_Sentry_Stratagem_Icon_Background.svg",
+    "callTime": 7.75,
+    "callTimeUpgraded": 4.75
+  },
+  {
+    "name": "A/G-16 Gatling Sentry",
+    "category": "Sentries",
+    "code": "DURL",
+    "cooldown": 150,
+    "iconFile": "Gatling_Sentry_Stratagem_Icon_Background.svg",
+    "callTime": 7.75,
+    "callTimeUpgraded": 4.75
+  },
+  {
+    "name": "A/AC-8 Autocannon Sentry",
+    "category": "Sentries",
+    "code": "DURULU",
+    "cooldown": 150,
+    "iconFile": "Autocannon_Sentry_Stratagem_Icon_Background.svg",
+    "callTime": 7.75,
+    "callTimeUpgraded": 4.75
+  },
+  {
+    "name": "A/M-12 Mortar Sentry",
+    "category": "Sentries",
+    "code": "DURRD",
+    "cooldown": 180,
+    "iconFile": "Mortar_Sentry_Stratagem_Icon_Background.svg",
+    "callTime": 7.75,
+    "callTimeUpgraded": 4.75
+  },
+  {
+    "name": "A/MLS-4X Rocket Sentry",
+    "category": "Sentries",
+    "code": "DURRL",
+    "cooldown": 150,
+    "iconFile": "Rocket_Sentry_Stratagem_Icon_Background.svg",
+    "callTime": 7.75,
+    "callTimeUpgraded": 4.75
+  },
+  {
+    "name": "A/ARC-3 Tesla Tower",
+    "category": "Sentries",
+    "code": "DURULR",
+    "cooldown": 120,
+    "iconFile": "Tesla_Tower_Stratagem_Icon_Background.svg",
+    "callTime": 7.75,
+    "callTimeUpgraded": 4.75
+  },
+  {
+    "name": "A/M-23 EMS Mortar Sentry",
+    "category": "Sentries",
+    "code": "DURDR",
+    "cooldown": 180,
+    "iconFile": "EMS_Mortar_Sentry_Stratagem_Icon_Background.svg",
+    "callTime": 7.75,
+    "callTimeUpgraded": 4.75
+  },
+  {
+    "name": "A/LAS-98 Laser Sentry",
+    "category": "Sentries",
+    "code": "DURDUR",
+    "cooldown": 150,
+    "iconFile": "Laser_Sentry_Stratagem_Icon_Background.svg",
+    "callTime": 7.75,
+    "callTimeUpgraded": 4.75
+  },
+  {
+    "name": "A/FLAM-40 Flame Sentry",
+    "category": "Sentries",
+    "code": "DURDUU",
+    "cooldown": 100,
+    "iconFile": "Flame_Sentry_Stratagem_Icon_Background.svg",
+    "callTime": 7.75,
+    "callTimeUpgraded": 4.75
+  },
+  {
+    "name": "A/GM-17 Gas Mortar Sentry",
+    "category": "Sentries",
+    "code": "DURDL",
+    "cooldown": 180,
+    "iconFile": "Gas_Mortar_Sentry_Stratagem_Icon_Background.svg",
+    "callTime": 7.75,
+    "callTimeUpgraded": 4.75
+  },
+  {
+    "name": "MD-6 Anti-Personnel Minefield",
+    "category": "Emplacements",
+    "code": "DLUR",
+    "cooldown": 120,
+    "iconFile": "Anti-Personnel_Minefield_Stratagem_Icon_Background.svg",
+    "callTime": 7.75,
+    "callTimeUpgraded": 4.75
+  },
+  {
+    "name": "MD-I4 Incendiary Mines",
+    "category": "Emplacements",
+    "code": "DLLD",
+    "cooldown": 120,
+    "iconFile": "Incendiary_Mines_Stratagem_Icon_Background.svg",
+    "callTime": 7.75,
+    "callTimeUpgraded": 4.75
+  },
+  {
+    "name": "MD-17 Anti-Tank Mines",
+    "category": "Emplacements",
+    "code": "DLUU",
+    "cooldown": 120,
+    "iconFile": "Anti-Tank_Mines_Stratagem_Icon_Background.svg",
+    "callTime": 7.75,
+    "callTimeUpgraded": 4.75
+  },
+  {
+    "name": "FX-12 Shield Generator Relay",
+    "category": "Emplacements",
+    "code": "DDLRLR",
+    "cooldown": 90,
+    "iconFile": "Shield_Generator_Relay_Stratagem_Icon_Background.svg",
+    "callTime": 7.75,
+    "callTimeUpgraded": 4.75
+  },
+  {
+    "name": "E/MG-101 HMG Emplacement",
+    "category": "Emplacements",
+    "code": "DULRRL",
+    "cooldown": 180,
+    "iconFile": "HMG_Emplacement_Stratagem_Icon_Background.svg",
+    "callTime": 7.75,
+    "callTimeUpgraded": 4.75
+  },
+  {
+    "name": "E/GL-21 Grenadier Battlement",
+    "category": "Emplacements",
+    "code": "DRDLR",
+    "cooldown": 120,
+    "iconFile": "Grenadier_Battlement_Stratagem_Icon_Background.svg",
+    "callTime": 7.75,
+    "callTimeUpgraded": 4.75
+  },
+  {
+    "name": "MD-8 Gas Mines",
+    "category": "Emplacements",
+    "code": "DLLR",
+    "cooldown": 120,
+    "iconFile": "Gas_Mines_Stratagem_Icon_Background.svg",
+    "callTime": 3,
+    "callTimeUpgraded": 0
+  },
+  {
+    "name": "E/AT-12 Anti-Tank Emplacement",
+    "category": "Emplacements",
+    "code": "DULRRR",
+    "cooldown": 180,
+    "iconFile": "Anti-Tank_Emplacement_Stratagem_Icon_Background.svg",
+    "callTime": 7.75,
+    "callTimeUpgraded": 4.75
+  },
+  {
+    "name": "Eagle Rearm",
+    "category": "Mission Stratagems - Ship",
+    "code": "UULUR",
+    "cooldown": 0,
+    "iconFile": "Eagle_Rearm_Stratagem_Icon_Background.svg",
+    "callTime": 0,
+    "callTimeUpgraded": null
+  },
+  {
+    "name": "Call In Super Destroyer",
+    "category": "Mission Stratagems - Ship",
+    "code": "UUDDLRLR",
+    "cooldown": 0,
+    "iconFile": "Call_In_Super_Destroyer_Stratagem_Icon_Background.svg",
+    "callTime": null,
+    "callTimeUpgraded": null
+  },
+  {
+    "name": "SoS Beacon",
+    "category": "Mission Stratagems - Ship",
+    "code": "UDRU",
+    "cooldown": 0,
+    "iconFile": "SOS_Beacon_Stratagem_Icon_Background.svg",
+    "callTime": 1,
+    "callTimeUpgraded": null
+  },
+  {
+    "name": "Reinforce",
+    "category": "Mission Stratagems - Ship",
+    "code": "UDRLU",
+    "cooldown": 0,
+    "iconFile": "Reinforce_Stratagem_Icon_Background.svg",
+    "callTime": null,
+    "callTimeUpgraded": null
+  },
+  {
+    "name": "Resupply",
+    "category": "Mission Stratagems - Ship",
+    "code": "DDUR",
+    "cooldown": 180,
+    "iconFile": "Resupply_Stratagem_Icon_Background.svg",
+    "callTime": 8,
+    "callTimeUpgraded": null
+  },
+  {
+    "name": "SSSD Delivery",
+    "category": "Mission Stratagems - Objective",
+    "code": "DDDUU",
+    "cooldown": 8,
+    "iconFile": "Upload_Data_Stratagem_Icon_Background.svg",
+    "callTime": 4,
+    "callTimeUpgraded": null
+  },
+  {
+    "name": "Seismic Probe",
+    "category": "Mission Stratagems - Objective",
+    "code": "UULRDD",
+    "cooldown": 28,
+    "iconFile": "Seismic_Probe_Stratagem_Icon_Background.svg",
+    "callTime": 10,
+    "callTimeUpgraded": null
+  },
+  {
+    "name": "SEAF Artillery",
+    "category": "Mission Stratagems - Objective",
+    "code": "RUUD",
+    "cooldown": 14,
+    "iconFile": "SEAF_Artillery_Stratagem_Icon_Background.svg",
+    "callTime": 10,
+    "callTimeUpgraded": null,
+    "callTimeEstimated": true
+  },
+  {
+    "name": "Hive Breaker Drill",
+    "category": "Mission Stratagems - Objective",
+    "code": "LUDRDD",
+    "cooldown": 119,
+    "iconFile": "Drill_Stratagem_Icon_Background.svg",
+    "callTime": 10,
+    "callTimeUpgraded": null
+  },
+  {
+    "name": "Portable Comms Relay",
+    "category": "Mission Stratagems - Objective",
+    "code": "UUDDLLD",
+    "cooldown": 0,
+    "iconFile": "Cargo_Container_Stratagem_Icon_Background.svg",
+    "callTime": 10,
+    "callTimeUpgraded": null
+  },
+  {
+    "name": "Tactical Video Camera",
+    "category": "Mission Stratagems - Objective",
+    "code": "RDDULLU",
+    "cooldown": 0,
+    "iconFile": "Tactical_Video_Camera_Stratagem_Icon_Background.svg",
+    "callTime": null,
+    "callTimeUpgraded": null
+  },
+  {
+    "name": "Upload Data",
+    "category": "Mission Stratagems - Objective",
+    "code": "LRUUU",
+    "cooldown": 0,
+    "iconFile": "Upload_Data_Stratagem_Icon_Background.svg",
+    "callTime": 4,
+    "callTimeUpgraded": null
+  },
+  {
+    "name": "Super Earth Flag",
+    "category": "Mission Stratagems - Objective",
+    "code": "DUDU",
+    "cooldown": 0,
+    "iconFile": "Super_Earth_Flag_Stratagem_Icon_Background.svg",
+    "callTime": 10,
+    "callTimeUpgraded": null
+  },
+  {
+    "name": "Cargo Container",
+    "category": "Mission Stratagems - Objective",
+    "code": "UUDDRD",
+    "cooldown": 0,
+    "iconFile": "Cargo_Container_Stratagem_Icon_Background.svg",
+    "callTime": 10,
+    "callTimeUpgraded": null
+  },
+  {
+    "name": "Dark Fluid Vessel",
+    "category": "Mission Stratagems - Objective",
+    "code": "ULRDUU",
+    "cooldown": 30,
+    "iconFile": "Dark_Fluid_Vessel_Stratagem_Icon_Background.svg",
+    "callTime": 10,
+    "callTimeUpgraded": null
+  },
+  {
+    "name": "Activate E-711 Extraction Drill",
+    "category": "Mission Stratagems - Objective",
+    "code": "DDLLDD",
+    "cooldown": 0,
+    "iconFile": "Drill_Stratagem_Icon_Background.svg",
+    "callTime": 0,
+    "callTimeUpgraded": null
+  },
+  {
+    "name": "Prospecting Drill",
+    "category": "Mission Stratagems - Objective",
+    "code": "DDLRDD",
+    "cooldown": 0,
+    "iconFile": "Drill_Stratagem_Icon_Background.svg",
+    "callTime": 10,
+    "callTimeUpgraded": null
+  },
+  {
+    "name": "Aquifer Drill",
+    "category": "Mission Stratagems - Objective",
+    "code": "LLLUDRDD",
+    "cooldown": 0,
+    "iconFile": "Drill_Stratagem_Icon_Background.svg",
+    "callTime": 10,
+    "callTimeUpgraded": null
+  },
+  {
+    "name": "Reinforcement Pods",
+    "category": "Mission Stratagems - Objective",
+    "code": "LRUUU",
+    "cooldown": 0,
+    "iconFile": "Upload_Data_Stratagem_Icon_Background.svg",
+    "callTime": null,
+    "callTimeUpgraded": null
+  },
+  {
+    "name": "Tectonic Drill",
+    "category": "Mission Stratagems - Objective",
+    "code": "UDUDUD",
+    "cooldown": 0,
+    "iconFile": "Drill_Stratagem_Icon_Background.svg",
+    "callTime": 10,
+    "callTimeUpgraded": null
+  },
+  {
+    "name": "NUX-223 Hellbomb",
+    "category": "Mission Stratagems - Objective",
+    "code": "DULDURDU",
+    "cooldown": 30,
+    "iconFile": "Hellbomb_Stratagem_Icon_Background.svg",
+    "callTime": 10,
+    "callTimeUpgraded": null
+  },
+  {
+    "name": "Orbital Illumination Flare",
+    "category": "Mission Stratagems - Unavailable",
+    "code": "RRLL",
+    "cooldown": 0,
+    "iconFile": "Orbital_Illumination_Flare_Stratagem_Icon_Background.svg",
+    "callTime": null,
+    "callTimeUpgraded": null
+  }
+]
