@@ -5,6 +5,17 @@ A plugin for **Stream Dock / fifine Control Deck** (MiraBox-based stream decks) 
 
 ![Stratagem keys, one of them on cooldown](docs/preview.png)
 
+## About this project
+
+I'm a Helldivers 2 player, not a programmer. I built this plugin because I wanted my
+stream deck to call stratagems and track their cooldowns, and I made it with the help of
+an AI coding assistant (Claude, by Anthropic), which wrote the code based on my ideas,
+testing and feedback.
+
+I use the plugin myself and tested each feature in the game, but please keep this in
+mind when using it, and report any problem in [Issues](../../issues). If you're a
+developer, suggestions and pull requests are very welcome.
+
 ## Features
 
 - **115 stratagems**: orbitals, Eagles, support weapons, backpacks, vehicles, sentries,
@@ -98,3 +109,7 @@ Plugin para **Stream Dock / fifine Control Deck** que chama as estratégias do
 **Helldivers 2** com um botão e mostra o **cooldown** no próprio botão.
 Para instalar, baixe o **`HD2-Stratagems-Setup.exe`** na [última release](../../releases/latest)
 e dê dois cliques. Se o Windows avisar, clique em **"Mais informações" → "Executar assim mesmo"**.
+
+Sou jogador, não programador: criei o projeto com a ajuda de um assistente de IA (Claude, da
+Anthropic), que escreveu o código a partir das minhas ideias, testes e feedback. Problemas e
+sugestões são bem-vindos em [Issues](../../issues).
